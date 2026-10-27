@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Blog | Central Wangarrata Motel</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/header/logo.jpg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="css/uikit.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<style>
+  
+/* ---------blog page start------------------------------------ */
+
+.career-con {
+  width: 100%;
+  margin: 80px 0;
+}
+
+.career-con-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.career-img {
+  width: 100%;
+}
+
+.career-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 20px;
+}
+
+.career-con-inner {
+  list-style: none;
+  padding: 0;
+}
+
+.career-con-inner .box-con {
+  background: #fcfcfc;
+  padding:20px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 20px;
+ border: 1px solid #ededed;
+ box-shadow: 0 3px 8px rgba(237, 237, 237, 1);
+  transition: all 0.3s;
+}
+
+.career-con-inner .box-con:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.blog-page-text {
+  padding: 15px 0;
+}
+
+.blog-page-text ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 18px 0;
+}
+
+.blog-page-text ul li {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000;
+  align-items: center;
+   font-family: "Manrope", sans-serif;
+}
+
+.blog-page-text p {
+  padding: 15px 0;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+   font-family: "Manrope", sans-serif;
+}
+
+.blog-page-text h4 {
+  color: var(--subheading);
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+   font-family: "Manrope", sans-serif;
+}
+
+.blog-learnbtn {
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  background: var(--banner-orange);
+  border-radius: 2px;
+  padding: 6px 18px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .career-con-inner {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .career-con {
+    margin: 60px 0;
+  }
+
+  .career-form-inner .contact-form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .btn-group {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 990px) {
+  .upload-btn label {
+    padding: 8px 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .contact-form {
+    width: 90%;
+  }
+
+  .career-con-inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .career-con-inner {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
+/* ---------blog page end------------------------------------ */
+</style>
+<body>
+  <!--------header start------------------->
+  <div class="header-container">
+    <header>
+      <a href="index.html" class="logo"><img class="img-fluid img-responsive" src="images/header/logo.jpg"
+          alt="Logo" /></a>
+      <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="right-content">
+        <a href="#" class="nav-btn">Book Now</a>
+        <div id="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!--------header end------------------->
+
+  <!----------------------inner banner start-------------------------------->
+  <div class="inner-banner" style="background-image: url(./images/about/inner-banner-about.jpg)">
+    <div class="custom-container">
+       <h1>Latest Blogs</h1>
+      <div class="breadcumb">
+        <ul>
+          <li class="breadcumb-listing">
+            <a href="index.html">Home >&nbsp;</a>
+          </li>
+          <li>Blogs</li>
+        </ul>
+        <!-- <ul>
+          <li style="color:#bbbbbb;">Home >&nbsp;</li>
+          <li style="color:#bbbbbb;">Specialities >&nbsp;</li>
+          <li>Orthopaedic</li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+  <!----------------------inner banner end-------------------------------->
+
+  <div class="custom-container">
+    
+<div class="career-con">
+        <ul class="career-con-inner">
+
+          <li class="box-con">
+            <div class="career-img">
+              <img src="images/blog/blog-pic-1.jpeg" alt="Profile" title="Profile">
+            </div>
+            <div class="blog-page-text">
+              <ul>
+                <li><img src="images/blog/categories-black.svg">&nbsp;Motel</li>
+                <li><img src="images/blog/calender-black.svg">&nbsp;05 Sep, 2024</li>
+              </ul>
+              <h4>Welcome to the Central Wangaratta Motel Blog</h4>
+              <p>Welcome to the Central Wangaratta Motel Blog, your trusted source for travel inspiration, local attractions, accommodation tips, and insider guides. Discover the best places to visit, dine, and explore in Wangaratta to make every stay more enjoyable and memorable.</p>
+               <a href="blogdetails.html" class="book-btn">Read More<img src="images/homepage/icon-arrow.svg" /></a>
+            </div>
+          </li>
+          <li class="box-con">
+            <div class="career-img">
+              <img src="images/blog/blog-pic-2.jpg" alt="Profile" title="Profile">
+            </div>
+            <div class="blog-page-text">
+              <ul>
+               <li><img src="images/blog/categories-black.svg">&nbsp;Holiday</li>
+                <li><img src="images/blog/calender-black.svg">&nbsp;05 Sep, 2024</li>
+              </ul>
+              <h4>Your Guide to Exploring Wangaratta with Central Wangaratta Motel</h4>
+              <p>Discover the best of Wangaratta with expert travel tips, local attractions, dining recommendations, and seasonal experiences. Whether you're visiting for business or leisure, Central Wangaratta Motel is your trusted guide to planning a comfortable and memorable stay.</p>
+              <a href="blogdetails.html" class="book-btn">Read More<img src="images/homepage/icon-arrow.svg" /></a>
+            </div>
+          </li>
+          <li class="box-con">
+            <div class="career-img">
+              <img src="images/blog/blog-pic-3.jpg" alt="Profile" title="Profile">
+            </div>
+            <div class="blog-page-text">
+              <ul>
+                <li><img src="images/blog/categories-black.svg">&nbsp;Vacation</li>
+                <li><img src="images/blog/calender-black.svg">&nbsp;05 Sep, 2024</li>
+              </ul>
+              <h4>Explore, Stay & Experience Wangaratta</h4>
+              <p>Discover local attractions, travel tips, and hidden gems to make every stay in Wangaratta comfortable, memorable, and enjoyable.</p>
+              <a href="blogdetails.html" class="book-btn">Read More<img src="images/homepage/icon-arrow.svg" /></a>
+            </div>
+          </li>
+          <li class="box-con">
+            <div class="career-img">
+              <img src="images/blog/blog-pic-4.jpg" alt="Profile" title="Profile">
+            </div>
+            <div class="blog-page-text">
+              <ul>
+                 <li><img src="images/blog/categories-black.svg">&nbsp;Holiday</li>
+                <li><img src="images/blog/calender-black.svg">&nbsp;05 Sep, 2024</li>
+              </ul>
+              <h4>Plan the Perfect Wangaratta Getaway</h4>
+              <p>Plan your ideal Wangaratta getaway with local travel tips, attractions, dining recommendations, and accommodation insights for a comfortable and memorable stay.</p>
+              <a href="blogdetails.html" class="book-btn">Read More<img src="images/homepage/icon-arrow.svg" /></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+  </div>
+
+  <!----------------------footer start-------------------------------->
+  <footer>
+    <div class="footer-top-area">
+      <div class="custom-container">
+        <div class="footer-top">
+          <div class="footer-top-item">
+            <h6>ADDRESS</h6>
+            <p>11-13 Ely St, Wangaratta VIC 3677, Australia</p>
+          </div>
+
+          <div class="footer-top-item">
+            <h6>PHONE</h6>
+            <p><a href="tel:+61499510214">+61499510214</a></p>
+          </div>
+
+          <div class="footer-top-item">
+            <h6>EMAIL</h6>
+            <p>
+              <a href="mailto:info@centralwangarattamotel.com">info@centralwangarattamotel.com</a>
+            </p>
+          </div>
+
+          <div class="footer-top-item">
+            <h6>SOCIAL</h6>
+            <a href="#"><img src="images/footer/footer-fb.svg" /></a>
+            <a href="#"><img src="images/footer/footer-insta.svg" /></a>
+            <a href="#"><img src="images/footer/footer-linkedin.svg" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-container">
+      <div class="footer-bottom-area">
+        <p>© 2025 Central Wangartta Motel. All Rights Reserved.</p>
+        <ul>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="termandconditions.html">Term of Use</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!----------------------footer end-------------------------------->
+    <!--------------BOTTOM HEADER--------->
+  <nav class="nav bottom-head">
+    <a href="tel:+61499510214" class="nav__link menu-whatsappbtn">
+      <span class="nav__text">Call Now</span>
+    </a>
+    <a href="#" class="nav__link nav__link--active menu-callbtn">
+      <span class="nav__text">Book Now</span>
+    </a>
+  </nav>
+
+  <!--------------------------->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/uikit.js"></script>
+  <script src="js/uikit-icons.js"></script>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init();</script>
+</body>
+</html>

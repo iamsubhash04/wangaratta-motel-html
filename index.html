@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home | Central Wangarrata Motel</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/header/logo.jpg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="css/uikit.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
+</head>
+
+<body>
+  <!--------header start------------------->
+  <div class="header-container">
+    <header>
+      <a href="index.html" class="logo"><img class="img-fluid img-responsive" src="images/header/logo.jpg"
+          alt="Logo" /></a>
+      <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="accommodation.html">Accommodation</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="right-content">
+        <a href="#" class="nav-btn">Book Now</a>
+        <div id="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!--------header end------------------->
+
+  <!----------------------banner start-------------------------------->
+  <div class="banner">
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide banner-slide">
+          <img src="images/homepage/banner.jpg" />
+          <div class="banner-text">
+            <h3>Relax, Refresh & Reconnect</h3>
+            <h1>Central Wangaratta Motel</h1>
+          </div>
+        </div>
+
+        <!-- <div class="swiper-slide banner-slide">
+          <img src="images/homepage/banner-2.jpg"/>
+          <div class="banner-text">
+            <h3>Relax, Refresh & Reconnect</h3>
+            <h1>Central Wangaratta Motel</h1>
+          </div>
+        </div> -->
+
+        <!-- <div class="swiper-slide banner-slide">
+          <img src="images/homepage/banner-3.jpg"/>
+          <div class="banner-text">
+            <h3>Relax, Refresh & Reconnect</h3>
+            <h1>Central Wangaratta Motel</h1>
+          </div>
+        </div> -->
+      </div>
+      <div class="swiper-pagination banner-pagination"></div>
+    </div>
+  </div>
+  <!----------------------banner end-------------------------------->
+
+  <!----------------------date bar start-------------------------------->
+  <div class="date-bar">
+    <div class="date-group">
+      <p class="label">Check In</p>
+      <div class="date-section">
+        <input class="form-control" type="datetime-local" placeholder="Check in Date">
+      </div>
+    </div>
+
+    <div class="date-group">
+      <p class="label">Check Out</p>
+      <div class="date-section">
+        <input class="form-control" type="datetime-local" placeholder="Check out Date">
+      </div>
+    </div>
+
+    <div class="nights" id="nights">3-Nights Stay</div>
+    <a href="#" class="check-btn">Check Availability</a>
+  </div>
+
+  <!----------------------date bar end-------------------------------->
+
+  <div class="custom-container">
+    <!----------------------welcome start-------------------------------->
+    <div class="welcome" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200">
+      <div class="welcome-box">
+        <img src="images/homepage/icon-welcome.png" />
+        <div class="welcome-heading">
+          <h2>Welcome to Central Wangaratta Motel</h2>
+        </div>
+        <p>
+          Nestled in the heart of the Pacific Islands resort, on the edge of a
+          tranquil and beautiful Garden Island, CozyStay is a haven of warmth,
+          tranquility and rejuvenation. Bathed in brilliant sunshine and clear
+          skies, it offers stunning views of palm-lined beaches and gorgeous
+          coral reefs.
+        </p>
+        <p>
+          Nestled in the heart of the Pacific Islands resort, on the edge of a
+          tranquil and beautiful Garden Island, CozyStay is a haven of warmth,
+          tranquility and rejuvenation. Bathed in brilliant sunshine and clear
+          skies, it offers stunning views of palm-lined beaches and gorgeous
+          coral reefs.
+        </p>
+        <a href="tel:+11111111" class="nav-btn">Call Now</a>
+      </div>
+    </div>
+    <!----------------------welcome end-------------------------------->
+    <!----------------------services start-------------------------------->
+    <div class="services">
+      <div class="services-heading">
+        <h5>Discover Our Services</h5>
+        <h2>Everything You Need for a Cozy and Comfortable Stay</h2>
+      </div>
+
+      <div class="services-area">
+        <div class="service-box">
+          <img src="images/homepage/icon-wifi.png" alt="Wifi" />
+          <div class="service-content">
+            <h3>Wifi</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <img src="images/homepage/icon-car.png" alt="Car Parking" />
+          <div class="service-content">
+            <h3>Car Parking</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <img src="images/homepage/icon-wifi.png" alt="Wifi" />
+          <div class="service-content">
+            <h3>Wifi</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <img src="images/homepage/icon-car.png" alt="Car Parking" />
+          <div class="service-content">
+            <h3>Car Parking</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <img src="images/homepage/icon-housekeeping.png" alt="Car Parking" />
+          <div class="service-content">
+            <h3>Housekeeping</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <img src="images/homepage/icon-pet.png" alt="Pets" />
+          <div class="service-content">
+            <h3>Pets</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <img src="images/homepage/icon-housekeeping.png" alt="Car Parking" />
+          <div class="service-content">
+            <h3>Housekeeping</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <img src="images/homepage/icon-pet.png" alt="Pets" />
+          <div class="service-content">
+            <h3>Pets</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="facilities.html" class="nav-btn view-more-btn">View More</a>
+
+    </div>
+    <!----------------------services end-------------------------------->
+
+    <!----------------------accommodation start-------------------------------->
+    <div class="accommodation">
+      <div class="services-heading">
+        <h5>Enjoy World Class Comfort & Stay</h5>
+        <h2>Accommodations</h2>
+      </div>
+
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/homepage/room-1.jpg" class="img-fluid zoom-img room-slide-image" />
+            <div class="custom-scroll">
+              <h4>Standard Family Room</h4>
+              <div class="features">
+                <div class="feature-item">
+                  <img src="images/homepage/icon-room-size.svg" alt="" />
+                  <span>26 m²</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-bed.svg" alt="" />
+                  <span>2 Single beds & 1 Double bed</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-tv.svg" alt="" />
+                  <span>Flat TV</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-ac.svg" alt="" />
+                  <span>AC</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-bathroom.svg" alt="" />
+                  <span>Bathroom</span>
+                </div>
+              </div>
+              <p>
+                This air-conditioned family room is comprised of a flat-screen
+                TV with streaming services, a private bathroom as well as
+                outdoor furniture. The unit has 3 beds.  This air-conditioned family room is comprised of a flat-screen
+                TV with streaming services, a private bathroom as well as
+                outdoor furniture. The unit has 3 beds.
+              </p>
+              <!-- <a href="#" class="book-btn">Book Now <img src="images/homepage/icon-arrow.svg" /></a> -->
+                <a href="#" class="book-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now <img src="images/homepage/icon-arrow.svg" /></a>
+            </div>
+          </div>
+
+          
+          <div class="swiper-slide">
+            <img src="images/homepage/room-1.jpg" class="img-fluid zoom-img room-slide-image" />
+            <div class="custom-scroll">
+              <h4>Standard Double Room</h4>
+              <div class="features">
+                <div class="feature-item">
+                  <img src="images/homepage/icon-room-size.svg" alt="" />
+                  <span>26 m²</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-bed.svg" alt="" />
+                  <span>2 Single beds & 1 Double bed</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-tv.svg" alt="" />
+                  <span>Flat TV</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-ac.svg" alt="" />
+                  <span>AC</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-bathroom.svg" alt="" />
+                  <span>Bathroom</span>
+                </div>
+              </div>
+              <p>
+                This air-conditioned family room is comprised of a flat-screen
+                TV with streaming services, a private bathroom as well as
+                outdoor furniture. The unit has 3 beds.
+              </p>
+              <a href="#" class="book-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now <img src="images/homepage/icon-arrow.svg" /></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/homepage/room-1.jpg" class="img-fluid zoom-img room-slide-image" />
+            <div class="custom-scroll">
+              <h4>Standard Family Room</h4>
+              <div class="features">
+                <div class="feature-item">
+                  <img src="images/homepage/icon-room-size.svg" alt="" />
+                  <span>26 m²</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-bed.svg" alt="" />
+                  <span>2 Single beds & 1 Double bed</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-tv.svg" alt="" />
+                  <span>Flat TV</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-ac.svg" alt="" />
+                  <span>AC</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-bathroom.svg" alt="" />
+                  <span>Bathroom</span>
+                </div>
+              </div>
+              <p>
+                This air-conditioned family room is comprised of a flat-screen
+                TV with streaming services, a private bathroom as well as
+                outdoor furniture. The unit has 3 beds.
+                 This air-conditioned family room is comprised of a flat-screen
+                TV with streaming services, a private bathroom as well as
+                outdoor furniture. The unit has 3 beds.  This air-conditioned family room is comprised of a flat-screen
+                TV with streaming services, a private bathroom as well as
+                outdoor furniture. The unit has 3 beds.
+              </p>
+               <a href="#" class="book-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now <img src="images/homepage/icon-arrow.svg" /></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/homepage/room-1.jpg" class="img-fluid zoom-img room-slide-image" />
+            <div class="custom-scroll">
+              <h4>Standard Double Room</h4>
+              <div class="features">
+                <div class="feature-item">
+                  <img src="images/homepage/icon-room-size.svg" alt="" />
+                  <span>26 m²</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-bed.svg" alt="" />
+                  <span>2 Single beds & 1 Double bed</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-tv.svg" alt="" />
+                  <span>Flat TV</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-ac.svg" alt="" />
+                  <span>AC</span>
+                </div>
+
+                <div class="feature-item">
+                  <img src="images/homepage/icon-bathroom.svg" alt="" />
+                  <span>Bathroom</span>
+                </div>
+              </div>
+              <p>
+                This air-conditioned family room is comprised of a flat-screen
+                TV with streaming services, a private bathroom as well as
+                outdoor furniture. The unit has 3 beds.This air-conditioned family room is comprised of a flat-screen
+                TV with streaming services, a private bathroom as well as
+                outdoor furniture. The unit has 3 beds.
+              </p>
+               <a href="#" class="book-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now <img src="images/homepage/icon-arrow.svg" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------accommodation end-------------------------------->
+    <!----------------------gallery garden start-------------------------------->
+    <div class="gallery-garden">
+      <div class="services-heading">
+        <h5>Discover Our Garden</h5>
+        <h2>Garden Area</h2>
+      </div>
+
+      <div class="flex-container">
+        <div class="flex-item glitter-img">
+          <img src="images/homepage/gallery-1.jpg" />
+        </div>
+        <div class="flex-item glitter-img">
+          <img src="images/homepage/gallery-2.jpg" />
+        </div>
+        <div class="flex-item glitter-img">
+          <img src="images/homepage/gallery-3.jpg" />
+        </div>
+        <div class="flex-item glitter-img">
+          <img src="images/homepage/gallery-4.jpg" />
+        </div>
+        <div class="flex-item glitter-img">
+          <img src="images/homepage/gallery-5.jpg" />
+        </div>
+        <div class="flex-item glitter-img">
+          <img src="images/homepage/gallery-6.jpg" />
+        </div>
+      </div>
+    </div>
+    <!----------------------gallery garden end-------------------------------->
+  </div>
+
+
+  <!----------------------testimonial start-------------------------------->
+  <div class="testimonial">
+    <img src="images/homepage/testi-icon.png" class="testi-icon" />
+    <h2>Words from Our Guests</h2>
+
+    <div class="swiper mySwiper3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <p>
+            Everything about this place exceeded expectations — from the warm
+            hospitality and thoughtfully designed rooms to the top-notch
+            amenities, including a relaxing indoor pool, rejuvenating spa, and
+            a diverse menu of mouthwatering dishes. Yet, what truly sets it
+            apart is the breathtaking view that captures the beauty of the
+            surroundings and leaves you wanting to stay a little longer.
+          </p>
+          <h6>James Scott - GM, Avani Group</h6>
+          <div class="star"><img src="images/homepage/star.png" /></div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>
+            Everything about this place exceeded expectations — from the warm
+            hospitality and thoughtfully designed rooms to the top-notch
+            amenities, including a relaxing indoor pool, rejuvenating spa, and
+            a diverse menu of mouthwatering dishes. Yet, what truly sets it
+            apart is the breathtaking view that captures the beauty of the
+            surroundings and leaves you wanting to stay a little longer.
+          </p>
+          <h6>James Scott - GM, Avani Group</h6>
+          <div class="star"><img src="images/homepage/star.png" /></div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>
+            Everything about this place exceeded expectations — from the warm
+            hospitality and thoughtfully designed rooms to the top-notch
+            amenities, including a relaxing indoor pool, rejuvenating spa, and
+            a diverse menu of mouthwatering dishes. Yet, what truly sets it
+            apart is the breathtaking view that captures the beauty of the
+            surroundings and leaves you wanting to stay a little longer.
+          </p>
+          <h6>James Scott - GM, Avani Group</h6>
+          <div class="star"><img src="images/homepage/star.png" /></div>
+        </div>
+
+        <div class="swiper-slide">
+          <p>
+            Everything about this place exceeded expectations — from the warm
+            hospitality and thoughtfully designed rooms to the top-notch
+            amenities, including a relaxing indoor pool, rejuvenating spa, and
+            a diverse menu of mouthwatering dishes. Yet, what truly sets it
+            apart is the breathtaking view that captures the beauty of the
+            surroundings and leaves you wanting to stay a little longer.
+          </p>
+          <h6>James Scott - GM, Avani Group</h6>
+          <div class="star"><img src="images/homepage/star.png" /></div>
+        </div>
+      </div>
+      <div class="swiper-pagination testi-pagination"></div>
+    </div>
+  </div>
+  <!----------------------testimonial end-------------------------------->
+
+  <!----------------------map start-------------------------------->
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.1532557720975!2d146.32357631176205!3d-36.3570665520854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b26dbbad5d9f2ef%3A0x81496ea813edd89e!2sCentral%20Wangaratta%20Motel!5e0!3m2!1sen!2sin!4v1763202046209!5m2!1sen!2sin"
+      width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!----------------------map end-------------------------------->
+
+  <!----------------------footer start-------------------------------->
+  <footer>
+    <div class="footer-top-area">
+      <div class="custom-container">
+        <div class="footer-top">
+          <div class="footer-top-item">
+            <h6>ADDRESS</h6>
+            <p>11-13 Ely St, Wangaratta VIC 3677, Australia</p>
+          </div>
+
+          <div class="footer-top-item">
+            <h6>PHONE</h6>
+            <p><a href="tel:+61499510214">+61499510214</a></p>
+          </div>
+
+          <div class="footer-top-item">
+            <h6>EMAIL</h6>
+            <p>
+              <a href="mailto:info@centralwangarattamotel.com">info@centralwangarattamotel.com</a>
+            </p>
+          </div>
+
+          <div class="footer-top-item">
+            <h6>SOCIAL</h6>
+            <a href="#"><img src="images/footer/footer-fb.svg" /></a>
+            <a href="#"><img src="images/footer/footer-insta.svg" /></a>
+            <a href="#"><img src="images/footer/footer-linkedin.svg" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-container">
+      <div class="footer-bottom-area">
+        <p>© 2025 Central Wangartta Motel. All Rights Reserved.</p>
+        <ul>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="termandconditions.html">Term of Use</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!----------------------footer end-------------------------------->
+<!----------------------Book Now Button Pop Up Start-------------------------------->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p class="call-us-modal-para">For Bookings</p>
+            <a href="tel:+61499510214" class="call-us-modal-btn">Call Us at +61499510214</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------Book Now Button Pop Up End-------------------------------->
+
+  <!--------------BOTTOM HEADER--------->
+  <nav class="nav bottom-head">
+    <a href="tel:+61499510214" class="nav__link menu-whatsappbtn">
+      <span class="nav__text">Call Now</span>
+    </a>
+    <a href="#" class="nav__link nav__link--active menu-callbtn">
+      <span class="nav__text">Book Now</span>
+    </a>
+  </nav>
+
+
+  <!--------------------------->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/uikit.js"></script>
+  <script src="js/uikit-icons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+  <!--TOTAL NIGHTS JS-->
+  <script>
+    const checkInInput = document.querySelector('.date-group:nth-child(1) .form-control');
+    const checkOutInput = document.querySelector('.date-group:nth-child(2) .form-control');
+    const nightsBox = document.getElementById('nights');
+    function calculateNights() {
+      const checkIn = new Date(checkInInput.value);
+      const checkOut = new Date(checkOutInput.value);
+      if (!checkIn || !checkOut || checkOut <= checkIn) {
+        nightsBox.textContent = "0-Night Stay";
+        return;
+      }
+      const diffTime = checkOut - checkIn;
+      const nights = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+      nightsBox.textContent = `${nights} - Nights Stay`;
+    }
+    checkInInput.addEventListener('change', calculateNights);
+    checkOutInput.addEventListener('change', calculateNights);
+  </script>
+
+  <script> flatpickr("input[type=datetime-local]", {}); </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init();</script>
+</body>
+
+</html>
